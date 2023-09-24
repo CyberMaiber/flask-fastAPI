@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="{{url_for('static', filename='bootstrap.min.css')}}"
+    />
+    <title>{% block title %} Магазин {% endblock %}</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <a href="/">Home</a>
+        <a href="/jackets/">Куртки</a>
+        <a href="/hats/">Шапки</a>
+        <a href="/boots/">Ботинки</a>
+      </nav>
+
+      {% block content %}Welcome в магазин!{% endblock %}
+    </div>
+  </body>
+</html>
