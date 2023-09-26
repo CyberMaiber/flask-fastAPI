@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="{{url_for('static', filename='bootstrap.min.css')}}"
+    />
+    <title>{% block title %} Страница {% endblock %}</title>
+  </head>
+  <body>
+    <div class="container">
+      {% block content %}
+      <h2>Добро пожаловать, {{username}}!</h2>
+      <form method="post">
+        <input type="submit" value="Выход" />
+      </form>
+    </div>
+    {% endblock %}
+  </body>
+</html>
