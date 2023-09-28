@@ -1,0 +1,13 @@
+{% extends 'layout.html' %}
+{% block title %}
+{{ title }}
+{% endblock %}
+{% block content %}
+<form method="post">
+  <input type="text" name="username" placeholder="Имя" required/> <br>
+  <input type="email" name="electromail" placeholder="E-mail" required/> <br>
+  <input type="password" name="password" placeholder="Пароль" required/>
+  <!-- <input type="password" name="confirm_password" placeholder="Подтверждение" required/> -->
+  <input type="submit" value="Отправить" />
+</form>
+{% endblock %}
